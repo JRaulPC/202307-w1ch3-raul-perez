@@ -30,7 +30,11 @@ body {
   padding-top: 5px;
 }
 
-.menu__main__header {
+a {
+  color: inherit;
+}
+
+.menu__main__title {
   font-weight: bold;
   font-size: 1.8rem;
 }
@@ -92,9 +96,32 @@ input[type="text"] {
   text-align: center;
 }
 
-.fa {
+div > button {
   border: none;
   color: white;
   background-color: rgb(68, 160, 128);
   size: 5px;
+}
+
+.shopping__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin-right: 2rem;
+}
+
+.shopping__list::before {
+  text-decoration: line-through;
+}
+
+.fa-square {
+  background-color: rgb(255, 200, 69);
+  color: white;
+}
+
+hr {
+  border: black 1px;
+  width: 100%;
 }
